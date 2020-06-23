@@ -1,0 +1,100 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* TDB - GRAPHISTE */
+header {
+  background-color: #1F00FF;
+  position: fixed;
+  height: 100%;
+  width: 210px;
+}
+
+header .logo {
+  text-align: center;
+}
+
+header .logo svg {
+  width: 100px;
+}
+
+header .menu li {
+  padding: 15px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  width: 100%;
+  margin-left: calc(0% - 30px);
+  background-color: #1F00FF;
+}
+
+header .menu li.active {
+  background-color: #F5F6FA;
+}
+
+header .menu li.active a {
+  color: #1F00FF;
+}
+
+header .menu li.active a .white {
+  display: none;
+}
+
+header .menu li.active a .blue {
+  display: block;
+}
+
+header .menu li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  color: #fff;
+}
+
+header .menu li a img {
+  margin-right: 10px;
+}
+
+header .menu li a .white {
+  display: block;
+}
+
+header .menu li a .blue {
+  display: none;
+}
+
+header .menu li a p {
+  margin: 0;
+}
+
+header .assistance {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+header .assistance p {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

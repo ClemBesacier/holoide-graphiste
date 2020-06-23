@@ -1,0 +1,96 @@
+// Variables
+
+$font: 'Arial', sans-serif;
+
+
+$blue: #1F00FF;
+$pink: #F9D7EF;
+$greyLight: #F5F6FA;
+
+// Général
+
+body {
+    font-family: $font;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+/* TDB - GRAPHISTE */
+
+header {
+    background-color: $blue;
+    position: fixed;
+    height: 100%;
+    width: 210px;
+    .logo {
+        text-align: center;
+        svg {
+            width: 100px;
+        }
+    }
+    .menu {
+        li {
+            padding: 15px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            width: 100%;
+            margin-left: calc(0% - 30px);
+            background-color: $blue;
+            
+            &.active {
+                background-color: $greyLight;
+                
+                a {
+                    color: $blue;
+                    .white {
+                        display: none;
+                    }
+                    .blue {
+                        display: block;
+                    }
+                }
+            }
+            a {
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 0.5px;
+                font-size: 14px;
+                color: #fff;
+                img {
+                    margin-right: 10px;
+                }
+                .white {
+                    display: block;
+                }
+                .blue {
+                    display: none;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .assistance {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        left: 0;
+        right: 0;
+        p {
+            color: #fff;
+        }
+    }
+}
