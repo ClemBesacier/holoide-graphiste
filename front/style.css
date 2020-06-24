@@ -356,6 +356,13 @@ header .assistance p {
   position: relative;
 }
 
+#yourHome .bgImg {
+  position: absolute;
+  bottom: 0;
+  right: -100px;
+  opacity: 0.2;
+}
+
 #yourHome .home {
   padding-left: 40px;
 }
@@ -846,5 +853,468 @@ header .assistance p {
   font-size: 12px;
   letter-spacing: 0.75px;
   margin-bottom: 0;
+}
+
+#yourProjects {
+  background-color: #F5F6FA;
+  padding-top: 110px;
+  height: 100%;
+  position: relative;
+}
+
+#yourProjects .bgImg {
+  position: absolute;
+  bottom: 0;
+  right: -100px;
+  opacity: 0.2;
+}
+
+#yourProjects .contentProjects {
+  padding-left: 50px;
+}
+
+#yourProjects .contentProjects h1 {
+  font-family: "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+#yourProjects .contentProjects h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+#yourProjects .contentProjects .col-contentProject .columnProject .first {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#yourProjects .contentProjects .col-contentProject .columnProject .first .img {
+  background-color: #DED7FF;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+  opacity: 0.7;
+  position: relative;
+}
+
+#yourProjects .contentProjects .col-contentProject .columnProject .first .img img {
+  opacity: 1;
+  width: 160px;
+}
+
+#yourProjects .contentProjects .col-contentProject .columnProject .first .img .pictos img:first-child {
+  position: absolute;
+  width: 18px;
+  right: 10px;
+  top: 10px;
+  background-color: #C4BCFF;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#yourProjects .contentProjects .col-contentProject .columnProject .first .img .pictos img:last-child {
+  width: 18px;
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  background-color: blue;
+  padding: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#yourProjects .contentProjects .col-contentProject .columnProject .first .text h6 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  margin-bottom: 3px;
+}
+
+#yourProjects .contentProjects .col-contentProject .columnProject .first .text .date {
+  color: #A6ACBE;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#yourProjects .contentProjects .col-contentProject .columnProject .first .text p {
+  font-size: 14px;
+  letter-spacing: 0.85px;
+}
+
+#yourProjects .contentProjects .col-contentProject .columnProject .first .text .button {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#yourProjects .contentProjects .col-contentProject .columnProject .first .text .button:hover {
+  border: 1px solid #DED7FF;
+  color: #000;
+  background-color: #DED7FF;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#yourProjects .contentProjects .col-contentProject .columnProject .second {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+#yourProjects .contentProjects .col-contentProject .columnProject .second .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#yourProjects .contentProjects .col-contentProject .columnProject .second .left .carre {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 20px;
+  background-color: #DED7FF;
+}
+
+#yourProjects .contentProjects .col-contentProject .columnProject .second .left .text h6 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  margin-bottom: 3px;
+}
+
+#yourProjects .contentProjects .col-contentProject .columnProject .second .left .text p {
+  font-size: 13px;
+  color: #A6ACBE;
+  margin-bottom: 0;
+}
+
+#yourProjects .contentProjects .col-contentProject .columnProject .second .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#yourProjects .contentProjects .col-contentProject .columnProject .second .right img {
+  background-color: #DED7FF;
+  padding: 4px;
+  width: 18px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#yourProjects .contentProjects .columnProject2 .second {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#yourProjects .contentProjects .columnProject2 .second .img {
+  background-color: #FFF495;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+  opacity: 0.7;
+  position: relative;
+}
+
+#yourProjects .contentProjects .columnProject2 .second .img img {
+  opacity: 1;
+  width: 160px;
+}
+
+#yourProjects .contentProjects .columnProject2 .second .img .pictos img:first-child {
+  position: absolute;
+  width: 18px;
+  right: 10px;
+  top: 10px;
+  background-color: #FFF9C5;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#yourProjects .contentProjects .columnProject2 .second .img .pictos img:last-child {
+  width: 18px;
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  background-color: blue;
+  padding: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#yourProjects .contentProjects .columnProject2 .second .text h6 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  margin-bottom: 3px;
+}
+
+#yourProjects .contentProjects .columnProject2 .second .text .date {
+  color: #A6ACBE;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#yourProjects .contentProjects .columnProject2 .second .text p {
+  font-size: 14px;
+  letter-spacing: 0.85px;
+}
+
+#yourProjects .contentProjects .columnProject2 .second .text .button {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#yourProjects .contentProjects .columnProject2 .second .text .button:hover {
+  border: 1px solid #FFF495;
+  background-color: #FFF495;
+  color: #000;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#yourProjects .contentProjects .columnProject2 .first {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+#yourProjects .contentProjects .columnProject2 .first .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#yourProjects .contentProjects .columnProject2 .first .left .carre {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 20px;
+  background-color: #FFF495;
+}
+
+#yourProjects .contentProjects .columnProject2 .first .left .text h6 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  margin-bottom: 3px;
+}
+
+#yourProjects .contentProjects .columnProject2 .first .left .text p {
+  font-size: 13px;
+  color: #A6ACBE;
+  margin-bottom: 0;
+}
+
+#yourProjects .contentProjects .columnProject2 .first .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#yourProjects .contentProjects .columnProject2 .first .right img {
+  background-color: #FFF495;
+  padding: 4px;
+  width: 18px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#yourProjects .contentProjects .col-columnProject3 h2 {
+  font-weight: 600;
+}
+
+#yourProjects .contentProjects .columnProject3 .second {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#yourProjects .contentProjects .columnProject3 .second .img {
+  background-color: #D1FFF0;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+  opacity: 0.7;
+  position: relative;
+}
+
+#yourProjects .contentProjects .columnProject3 .second .img img {
+  opacity: 1;
+  width: 160px;
+}
+
+#yourProjects .contentProjects .columnProject3 .second .img .pictos img:first-child {
+  position: absolute;
+  width: 18px;
+  right: 10px;
+  top: 10px;
+  background-color: #D1FFF0;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#yourProjects .contentProjects .columnProject3 .second .img .pictos img:last-child {
+  width: 18px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  background-color: blue;
+  padding: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#yourProjects .contentProjects .columnProject3 .second .text h6 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  margin-bottom: 3px;
+}
+
+#yourProjects .contentProjects .columnProject3 .second .text .date {
+  color: #A6ACBE;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#yourProjects .contentProjects .columnProject3 .second .text p {
+  font-size: 14px;
+  letter-spacing: 0.85px;
+}
+
+#yourProjects .contentProjects .columnProject3 .first {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+#yourProjects .contentProjects .columnProject3 .first .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#yourProjects .contentProjects .columnProject3 .first .left .carre {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 20px;
+  background-color: #D1FFF0;
+}
+
+#yourProjects .contentProjects .columnProject3 .first .left .text h6 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  margin-bottom: 3px;
+}
+
+#yourProjects .contentProjects .columnProject3 .first .left .text p {
+  font-size: 13px;
+  color: #A6ACBE;
+  margin-bottom: 0;
+}
+
+#yourProjects .contentProjects .columnProject3 .first .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#yourProjects .contentProjects .columnProject3 .first .right img {
+  background-color: #D1FFF0;
+  padding: 4px;
+  width: 18px;
+  border-radius: 3px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

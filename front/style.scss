@@ -284,6 +284,12 @@ header {
     padding-top: 110px;
     height: 100%;
     position: relative;
+    .bgImg {
+        position: absolute;
+        bottom: 0;
+        right: -100px;
+        opacity: 0.2;
+    }
     .home {
         padding-left: 40px;
         .wallet {
@@ -696,6 +702,393 @@ header {
                             letter-spacing: 0.75px;
                             margin-bottom: 0;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#yourProjects {
+    background-color: $greyLight;
+    padding-top: 110px;
+    height: 100%;
+    position: relative;
+    .bgImg {
+        position: absolute;
+        bottom: 0;
+        right: -100px;
+        opacity: 0.2;
+    }
+    .contentProjects {
+        padding-left: 50px;
+        h1 {
+            font-family: $font;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+        h2 {
+            font-size: 22px;
+            margin-bottom: 30px;
+
+        }
+        .col-contentProject {
+            
+            .columnProject {
+                .first {
+                    background-color: white;
+                    padding: 20px;
+                    border-radius: 10px;
+                    margin-bottom: 15px;
+                    .img {
+                        background-color: $purple;
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 10px;
+                        opacity: 0.7;
+                        position: relative;
+                        img {
+                            opacity: 1;
+                            width: 160px;
+                        }
+                        .pictos {
+                            img:first-child {
+                                position: absolute;
+                                width: 18px;
+                                right: 10px;
+                                top: 10px;
+                                background-color: #C4BCFF;
+                                padding: 5px;
+                                border-radius: 3px;
+                                cursor: pointer;
+                            }
+                            img:last-child {
+                                width: 18px;
+                                position: absolute;
+                                right: 10px;
+                                top: 28px;
+                                background-color: blue;
+                                padding: 3px;
+                                border-radius: 3px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .text {
+                        h6 {
+                            font-size: 14px;
+                            font-weight: 600;
+                            letter-spacing: 0.25px;
+                            margin-bottom: 3px;
+                        }
+                        .date {
+                            color: $grey;
+                            font-size: 14px;
+                            margin-bottom: 8px;
+                        }
+                        p {
+                            font-size: 14px;
+                            letter-spacing: 0.85px;
+                        }
+                        .button {
+                            border: 1px solid rgba($color: #000000, $alpha: 0.4);
+                            border-radius: 8px;
+                            text-align: center;
+                            text-transform: uppercase;
+                            font-size: 14px;
+                            padding: 5px;
+                            color: rgba($color: #000000, $alpha: 0.7);
+                            cursor: pointer;
+                            transition: 0.3s ease;
+                            &:hover {
+                                border: 1px solid $purple;
+                                color: #000;
+                                background-color: $purple;
+                                transition: 0.3s ease;
+                            }
+                        }
+                    }
+                }
+                .second {
+                    background-color: white;
+                    padding: 20px;
+                    border-radius: 12px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 15px;
+                    .left {
+                        display: flex;
+                        align-items: center;
+                        .carre {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 10px;
+                            margin-right: 20px;
+                            background-color: $purple;
+                        }
+                        .text {
+
+                            h6 {
+                                font-size: 14px;
+                                font-weight: 600;
+                                letter-spacing: 0.25px;
+                                margin-bottom: 3px;
+                            }
+                            p {
+                                font-size: 13px;
+                                color: $grey;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                    .right {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        img {
+                            background-color: $purple;
+                            padding: 4px;
+                            width: 18px;
+                            border-radius: 3px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .columnProject2 {
+            .second {
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 15px;
+                .img {
+                    background-color: $yellow;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                    opacity: 0.7;
+                    position: relative;
+                    img {
+                        opacity: 1;
+                        width: 160px;
+                    }
+                    .pictos {
+                        img:first-child {
+                            position: absolute;
+                            width: 18px;
+                            right: 10px;
+                            top: 10px;
+                            background-color: #FFF9C5;
+                            padding: 5px;
+                            border-radius: 3px;
+                            cursor: pointer;
+                        }
+                        img:last-child {
+                            width: 18px;
+                            position: absolute;
+                            right: 10px;
+                            top: 28px;
+                            background-color: blue;
+                            padding: 3px;
+                            border-radius: 3px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .text {
+                    h6 {
+                        font-size: 14px;
+                        font-weight: 600;
+                        letter-spacing: 0.25px;
+                        margin-bottom: 3px;
+                    }
+                    .date {
+                        color: $grey;
+                        font-size: 14px;
+                        margin-bottom: 8px;
+                    }
+                    p {
+                        font-size: 14px;
+                        letter-spacing: 0.85px;
+                    }
+                    .button {
+                        border: 1px solid rgba($color: #000000, $alpha: 0.4);
+                        border-radius: 8px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        padding: 5px;
+                        color: rgba($color: #000000, $alpha: 0.7);
+                        cursor: pointer;
+                        transition: 0.3s ease;
+
+                        &:hover {
+                            border: 1px solid $yellow;
+                            background-color: $yellow;
+                            color: #000;
+                            transition: 0.3s ease;
+                        }
+                    }
+                }
+            }
+            .first {
+                background-color: white;
+                padding: 20px;
+                border-radius: 12px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+                .left {
+                    display: flex;
+                    align-items: center;
+                    .carre {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 10px;
+                        margin-right: 20px;
+                        background-color: $yellow
+                    }
+                    .text {
+
+                        h6 {
+                            font-size: 14px;
+                            font-weight: 600;
+                            letter-spacing: 0.25px;
+                            margin-bottom: 3px;
+                        }
+                        p {
+                            font-size: 13px;
+                            color: $grey;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    img {
+                        background-color: $yellow;
+                        padding: 4px;
+                        width: 18px;
+                        border-radius: 3px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .col-columnProject3 {
+            h2 {
+                font-weight: 600;
+            }
+        }
+        
+        .columnProject3 {
+            .second {
+                background-color: white;
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 15px;
+                .img {
+                    background-color: $green;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                    opacity: 0.7;
+                    position: relative;
+                    img {
+                        opacity: 1;
+                        width: 160px;
+                    }
+                    .pictos {
+                        img:first-child {
+                            position: absolute;
+                            width: 18px;
+                            right: 10px;
+                            top: 10px;
+                            background-color: #D1FFF0;
+                            padding: 5px;
+                            border-radius: 3px;
+                            cursor: pointer;
+                        }
+                        img:last-child {
+                            width: 18px;
+                            position: absolute;
+                            right: 10px;
+                            top: 8px;
+                            background-color: blue;
+                            padding: 3px;
+                            border-radius: 3px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .text {
+                    h6 {
+                        font-size: 14px;
+                        font-weight: 600;
+                        letter-spacing: 0.25px;
+                        margin-bottom: 3px;
+                    }
+                    .date {
+                        color: $grey;
+                        font-size: 14px;
+                        margin-bottom: 8px;
+                    }
+                    p {
+                        font-size: 14px;
+                        letter-spacing: 0.85px;
+                    }
+                    
+                }
+            }
+            .first {
+                background-color: white;
+                padding: 20px;
+                border-radius: 12px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+                .left {
+                    display: flex;
+                    align-items: center;
+                    .carre {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 10px;
+                        margin-right: 20px;
+                        background-color: $green
+                    }
+                    .text {
+
+                        h6 {
+                            font-size: 14px;
+                            font-weight: 600;
+                            letter-spacing: 0.25px;
+                            margin-bottom: 3px;
+                        }
+                        p {
+                            font-size: 13px;
+                            color: $grey;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    img {
+                        background-color: $green;
+                        padding: 4px;
+                        width: 18px;
+                        border-radius: 3px;
+                        cursor: pointer;
                     }
                 }
             }
