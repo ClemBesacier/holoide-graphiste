@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
@@ -76,7 +77,7 @@ header .menu li.active {
 }
 
 header .menu li.active svg .st0 {
-  fill: white;
+  fill: #F5F6FA;
 }
 
 header .menu li.active a {
@@ -377,7 +378,7 @@ header .assistance p {
 #yourHome .home .wallet .blueCard {
   background-color: #1F00FF;
   border-radius: 30px;
-  padding: 40px;
+  padding: 30px;
   color: #fff;
 }
 
@@ -595,6 +596,16 @@ header .assistance p {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.5px;
+  border: 1px solid #fff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#yourHome .home .wallet .pinkCard .cta a:hover {
+  background-color: inherit;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: #fff;
 }
 
 #yourHome .home .wallet .pinkCard .circle {
@@ -625,9 +636,69 @@ header .assistance p {
   right: 0;
 }
 
+#yourHome .home .myProjects {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#yourHome .home .myProjects p {
+  position: absolute;
+  right: 15px;
+  top: 63px;
+  font-size: 13px;
+  color: #A6ACBE;
+  font-weight: 200;
+  cursor: pointer;
+}
+
 #yourHome .home .myProjects h2 {
   font-size: 24px;
   margin-bottom: 30px;
+}
+
+#yourHome .home .myProjects table {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
+}
+
+#yourHome .home .myProjects table tr td {
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+#yourHome .home .myProjects table tr td:first-child {
+  padding-left: 20px;
+}
+
+#yourHome .home .myProjects table tr td.state::before {
+  content: "•";
+  padding-right: 5px;
+}
+
+#yourHome .home .myProjects table tr td.state.valide::before {
+  color: green;
+}
+
+#yourHome .home .myProjects table tr td.state.enCours::before {
+  color: orange;
+}
+
+#yourHome .home .myProjects table tr td.state.wait::before {
+  color: purple;
+}
+
+#yourHome .home .myProjects table tr td.state.modif::before {
+  color: red;
+}
+
+#yourHome .home .myProjects table tr.grey {
+  background-color: #F8F9FF;
+}
+
+#yourHome .home .myProjects table .title td {
+  font-weight: 600;
+  width: 30%;
 }
 
 #yourHome .secondColumn h2 {
@@ -636,11 +707,11 @@ header .assistance p {
 }
 
 #yourHome .secondColumn .pourVous {
-  margin-bottom: 20px;
+  margin-bottom: 52px;
 }
 
 #yourHome .secondColumn .pourVous .col-yourCard {
-  padding: 5px;
+  padding: 0 5px;
 }
 
 #yourHome .secondColumn .pourVous .yourCard {
@@ -648,6 +719,7 @@ header .assistance p {
   border-radius: 25px;
   padding: 15px;
   margin-bottom: 30px;
+  height: 100%;
 }
 
 #yourHome .secondColumn .pourVous .yourCard .img {
@@ -728,6 +800,51 @@ header .assistance p {
   padding-left: 5px;
   letter-spacing: 0.25px;
   line-height: 18px;
+  margin-bottom: 0;
+}
+
+#yourHome .secondColumn .actus .contentActu .ownActu {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+#yourHome .secondColumn .actus .contentActu .ownActu .carre {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+#yourHome .secondColumn .actus .contentActu .ownActu .carre.green {
+  background-color: #33D69F;
+}
+
+#yourHome .secondColumn .actus .contentActu .ownActu .carre.yellow {
+  background-color: #FFF495;
+}
+
+#yourHome .secondColumn .actus .contentActu .ownActu .carre.purple {
+  background-color: #DED7FF;
+}
+
+#yourHome .secondColumn .actus .contentActu .ownActu .text h6 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  margin-bottom: 3px;
+}
+
+#yourHome .secondColumn .actus .contentActu .ownActu .text p {
+  font-size: 12px;
+  letter-spacing: 0.75px;
   margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
