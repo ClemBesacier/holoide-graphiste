@@ -45,10 +45,38 @@ header .menu li {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   width: 100%;
+  position: relative;
+  z-index: 1;
+  background-color: #1F00FF;
+}
+
+header .menu li svg {
+  position: absolute;
+  width: 20px;
+  right: 0;
+}
+
+header .menu li svg:first-child {
+  top: -20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+header .menu li svg:last-child {
+  bottom: -20px;
+}
+
+header .menu li svg .st0 {
+  fill: blue;
 }
 
 header .menu li.active {
   background-color: #F5F6FA;
+  z-index: 2;
+}
+
+header .menu li.active svg .st0 {
+  fill: white;
 }
 
 header .menu li.active a {
@@ -313,6 +341,389 @@ header .assistance p {
 }
 
 #yourContent .content .yourCard p {
+  font-size: 13px;
+  padding-left: 5px;
+  letter-spacing: 0.25px;
+  line-height: 18px;
+  margin-bottom: 0;
+}
+
+#yourHome {
+  background-color: #F5F6FA;
+  padding-top: 110px;
+  height: 100%;
+  position: relative;
+}
+
+#yourHome .home {
+  padding-left: 40px;
+}
+
+#yourHome .home .wallet {
+  margin-bottom: 40px;
+}
+
+#yourHome .home .wallet h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+#yourHome .home .wallet .myCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#yourHome .home .wallet .blueCard {
+  background-color: #1F00FF;
+  border-radius: 30px;
+  padding: 40px;
+  color: #fff;
+}
+
+#yourHome .home .wallet .blueCard .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+#yourHome .home .wallet .blueCard .price p {
+  font-size: 50px;
+  margin-bottom: 0;
+  line-height: 46px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#yourHome .home .wallet .blueCard .price .percentage {
+  background-color: #33D69F;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: inherit;
+  margin-left: 20px;
+}
+
+#yourHome .home .wallet .blueCard .myWallet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+#yourHome .home .wallet .blueCard .myWallet .elements p {
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+#yourHome .home .wallet .blueCard .myWallet .elements p:last-child {
+  font-size: 13px;
+}
+
+#yourHome .home .wallet .blueCard .myWallet .line {
+  background-color: #fff;
+  height: 40px;
+  width: 1px;
+  opacity: 0.7;
+}
+
+#yourHome .home .wallet .blueCard .cta a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+#yourHome .home .wallet .blueCard .cta .first {
+  background-color: #fff;
+  padding: 7px 20px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  margin-bottom: 10px;
+}
+
+#yourHome .home .wallet .blueCard .cta .first:hover {
+  background-color: inherit;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#yourHome .home .wallet .blueCard .cta .first:hover .white {
+  display: block;
+}
+
+#yourHome .home .wallet .blueCard .cta .first:hover .blue {
+  display: none;
+}
+
+#yourHome .home .wallet .blueCard .cta .first:hover p {
+  color: #fff;
+}
+
+#yourHome .home .wallet .blueCard .cta .first .white {
+  display: none;
+}
+
+#yourHome .home .wallet .blueCard .cta .first .blue {
+  display: block;
+}
+
+#yourHome .home .wallet .blueCard .cta .first img {
+  width: 30px;
+  margin-right: 20px;
+}
+
+#yourHome .home .wallet .blueCard .cta .first p {
+  margin-bottom: 0;
+  line-height: 14px;
+  font-size: 13px;
+  max-width: 120px;
+  color: #1F00FF;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+#yourHome .home .wallet .blueCard .cta .second {
+  border: 1px solid #fff;
+  padding: 7px 20px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#yourHome .home .wallet .blueCard .cta .second:hover {
+  background-color: #fff;
+}
+
+#yourHome .home .wallet .blueCard .cta .second:hover .blue {
+  display: block;
+  width: 28px;
+}
+
+#yourHome .home .wallet .blueCard .cta .second:hover .white {
+  display: none;
+}
+
+#yourHome .home .wallet .blueCard .cta .second:hover p {
+  color: #1F00FF;
+}
+
+#yourHome .home .wallet .blueCard .cta .second .blue {
+  display: none;
+}
+
+#yourHome .home .wallet .blueCard .cta .second .white {
+  display: block;
+}
+
+#yourHome .home .wallet .blueCard .cta .second img {
+  width: 30px;
+  margin-right: 20px;
+}
+
+#yourHome .home .wallet .blueCard .cta .second p {
+  margin-bottom: 0;
+  line-height: 14px;
+  font-size: 13px;
+  max-width: 120px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+#yourHome .home .wallet .col-pinkCard {
+  padding: 0;
+}
+
+#yourHome .home .wallet .pinkCard {
+  background-color: #FF9CE2;
+  border-radius: 20px;
+  padding: 15px;
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#yourHome .home .wallet .pinkCard .title {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  line-height: 17px;
+}
+
+#yourHome .home .wallet .pinkCard .number {
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  font-size: 70px;
+}
+
+#yourHome .home .wallet .pinkCard .cta {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+#yourHome .home .wallet .pinkCard .cta a {
+  background-color: white;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+#yourHome .home .wallet .pinkCard .circle {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  width: 60px;
+}
+
+#yourHome .home .wallet .pinkCard .vague {
+  position: absolute;
+  top: 20px;
+  right: -30px;
+  width: 110px;
+}
+
+#yourHome .home .wallet .pinkCard .polygone {
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  width: 90px;
+}
+
+#yourHome .home .wallet .pinkCard .sphere {
+  position: absolute;
+  width: 60px;
+  bottom: 80px;
+  right: 0;
+}
+
+#yourHome .home .myProjects h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+#yourHome .secondColumn h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+#yourHome .secondColumn .pourVous {
+  margin-bottom: 20px;
+}
+
+#yourHome .secondColumn .pourVous .col-yourCard {
+  padding: 5px;
+}
+
+#yourHome .secondColumn .pourVous .yourCard {
+  background-color: white;
+  border-radius: 25px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+#yourHome .secondColumn .pourVous .yourCard .img {
+  background-color: #D1FFF0;
+  border-radius: 20px;
+  position: relative;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+}
+
+#yourHome .secondColumn .pourVous .yourCard .img img {
+  width: 100px;
+}
+
+#yourHome .secondColumn .pourVous .yourCard .img .save {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#yourHome .secondColumn .pourVous .yourCard .img .save .blackSave {
+  display: block;
+  background-color: white;
+  padding: 3px 6px;
+  border-radius: 6px;
+  margin-right: 5px;
+  width: 25px;
+}
+
+#yourHome .secondColumn .pourVous .yourCard .img .save .whiteSave {
+  display: none;
+}
+
+#yourHome .secondColumn .pourVous .yourCard .img .save .eye {
+  background-color: white;
+  padding: 7px 5px;
+  border-radius: 5px;
+  width: 25px;
+  cursor: pointer;
+}
+
+#yourHome .secondColumn .pourVous .yourCard .img .save.active .blackSave {
+  display: none;
+}
+
+#yourHome .secondColumn .pourVous .yourCard .img .save.active .whiteSave {
+  display: block;
+  background-color: #1F00FF;
+  padding: 3px 6px;
+  border-radius: 6px;
+  margin-right: 5px;
+  width: 25px;
+}
+
+#yourHome .secondColumn .pourVous .yourCard h3 {
+  padding-left: 5px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+#yourHome .secondColumn .pourVous .yourCard p {
   font-size: 13px;
   padding-left: 5px;
   letter-spacing: 0.25px;
