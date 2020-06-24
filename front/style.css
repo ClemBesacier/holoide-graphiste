@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+section {
+  padding-left: 210px;
+  padding-right: 30px;
+}
+
 a {
   text-decoration: none;
 }
@@ -20,7 +25,11 @@ header {
   background-color: #1F00FF;
   position: fixed;
   height: 100%;
+  top: 0;
   width: 210px;
+  z-index: 2;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 header .logo {
@@ -96,5 +105,215 @@ header .assistance {
 
 header .assistance p {
   color: #fff;
+}
+
+#search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 75%;
+  right: 0;
+  top: 0;
+  position: fixed;
+  background-color: #fff;
+}
+
+#search .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#search .search input {
+  border: none;
+  padding-left: 10px;
+}
+
+#search .search input::-webkit-input-placeholder {
+  color: #A6ACBE;
+  letter-spacing: 0.5px;
+}
+
+#search .search input:-ms-input-placeholder {
+  color: #A6ACBE;
+  letter-spacing: 0.5px;
+}
+
+#search .search input::-ms-input-placeholder {
+  color: #A6ACBE;
+  letter-spacing: 0.5px;
+}
+
+#search .search input::placeholder {
+  color: #A6ACBE;
+  letter-spacing: 0.5px;
+}
+
+#search .connexion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#search .connexion .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-right: 1px solid #F5F6FA;
+}
+
+#search .connexion .account .text, #search .connexion .account img {
+  margin-right: 20px;
+  text-align: right;
+}
+
+#search .connexion .account .text .name, #search .connexion .account img .name {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+#search .connexion .account .text .job, #search .connexion .account img .job {
+  color: #A6ACBE;
+  font-size: 12px;
+}
+
+#search .connexion .notifications {
+  padding-left: 20px;
+}
+
+#content {
+  background-color: #F5F6FA;
+  padding-top: 90px;
+  padding-left: 285px;
+}
+
+#content h1 {
+  padding-top: 30px;
+}
+
+#content .cards {
+  padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+}
+
+#content .cards .card {
+  width: 25%;
+  padding: 0 15px;
+  background-color: white;
+  border-radius: 25px;
+  padding-top: 15px;
+  margin-bottom: 30px;
+  margin: 15px;
+}
+
+#content .cards .card .img {
+  background-color: #D1FFF0;
+  border-radius: 20px;
+  position: relative;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#content .cards .card .img img {
+  width: 100px;
+}
+
+#content .cards .card .img .save {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#content .cards .card .img .save .blackSave {
+  display: block;
+  background-color: white;
+  padding: 3px 6px;
+  border-radius: 6px;
+  margin-right: 5px;
+  width: 15px;
+}
+
+#content .cards .card .img .save .whiteSave {
+  display: none;
+}
+
+#content .cards .card .img .save .eye {
+  background-color: white;
+  padding: 7px 5px;
+  border-radius: 5px;
+  width: 15px;
+  cursor: pointer;
+}
+
+#content .cards .card .img .save.active .blackSave {
+  display: none;
+}
+
+#content .cards .card .img .save.active .whiteSave {
+  display: block;
+  background-color: #1F00FF;
+  padding: 3px 6px;
+  border-radius: 6px;
+  margin-right: 5px;
+  width: 15px;
+}
+
+#content .cards .card h3 {
+  padding-left: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+#content .cards .card p {
+  font-size: 14px;
+  padding-left: 5px;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  padding-bottom: 15px;
 }
 /*# sourceMappingURL=style.css.map */
