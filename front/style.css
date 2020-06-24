@@ -115,8 +115,7 @@ header .assistance p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 10px 0;
   width: 100%;
   right: 0;
   top: 0;
@@ -135,7 +134,7 @@ header .assistance p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 50px;
+  margin-left: 250px;
 }
 
 #search .search input {
@@ -173,6 +172,7 @@ header .assistance p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-right: 20px;
 }
 
 #search .connexion .account {
@@ -196,7 +196,6 @@ header .assistance p {
 #search .connexion .account .text .name, #search .connexion .account img .name {
   font-size: 14px;
   font-weight: 400;
-  margin-bottom: 5px;
 }
 
 #search .connexion .account .text .job, #search .connexion .account img .job {
@@ -230,7 +229,6 @@ header .assistance p {
   font-family: "Arial", sans-serif;
   font-size: 22px;
   font-weight: 600;
-  padding-top: 20px;
   margin-bottom: 30px;
 }
 

@@ -108,8 +108,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 10px 0;
     width: 100%;
     right: 0;
     top: 0;
@@ -120,7 +119,7 @@ header {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        margin-left: 50px;
+        margin-left: 250px;
         input {
             border: none;
             padding-left: 10px;
@@ -135,6 +134,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding-right: 20px;
         .account {
             display: flex;
             align-items: center;
@@ -146,7 +146,6 @@ header {
                 .name {
                     font-size: 14px;
                     font-weight: 400;
-                    margin-bottom: 5px;
                 }
                 .job {
                     color: $grey;
@@ -177,7 +176,6 @@ header {
             font-family: $font;
             font-size: 22px;
             font-weight: 600;
-            padding-top: 20px;
             margin-bottom: 30px;
         }
         .yourCard {
