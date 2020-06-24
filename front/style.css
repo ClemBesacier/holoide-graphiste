@@ -27,7 +27,7 @@ header {
   height: 100%;
   top: 0;
   width: 210px;
-  z-index: 2;
+  z-index: 3;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -45,8 +45,6 @@ header .menu li {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   width: 100%;
-  margin-left: calc(0% - 30px);
-  background-color: #1F00FF;
 }
 
 header .menu li.active {
@@ -119,10 +117,11 @@ header .assistance p {
           justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px;
-  width: 75%;
+  width: 100%;
   right: 0;
   top: 0;
   position: fixed;
+  z-index: 2;
   background-color: #fff;
 }
 
@@ -136,6 +135,7 @@ header .assistance p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 50px;
 }
 
 #search .search input {
@@ -208,54 +208,58 @@ header .assistance p {
   padding-left: 20px;
 }
 
-#content {
+#yourContent {
   background-color: #F5F6FA;
-  padding-top: 90px;
-  padding-left: 285px;
+  padding-top: 110px;
+  height: 100%;
+  position: relative;
 }
 
-#content h1 {
-  padding-top: 30px;
+#yourContent .bgImg {
+  position: absolute;
+  bottom: 0;
+  right: -100px;
+  opacity: 0.2;
 }
 
-#content .cards {
-  padding-right: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: -15px;
+#yourContent .content {
+  padding-left: 50px;
 }
 
-#content .cards .card {
-  width: 25%;
-  padding: 0 15px;
+#yourContent .content h1 {
+  font-family: "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+#yourContent .content .yourCard {
   background-color: white;
   border-radius: 25px;
-  padding-top: 15px;
+  padding: 15px;
   margin-bottom: 30px;
-  margin: 15px;
 }
 
-#content .cards .card .img {
+#yourContent .content .yourCard .img {
   background-color: #D1FFF0;
   border-radius: 20px;
   position: relative;
-  height: 150px;
+  height: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 10px;
 }
 
-#content .cards .card .img img {
+#yourContent .content .yourCard .img img {
   width: 100px;
 }
 
-#content .cards .card .img .save {
+#yourContent .content .yourCard .img .save {
   position: absolute;
   right: 15px;
   top: 12px;
@@ -268,52 +272,53 @@ header .assistance p {
   cursor: pointer;
 }
 
-#content .cards .card .img .save .blackSave {
+#yourContent .content .yourCard .img .save .blackSave {
   display: block;
   background-color: white;
   padding: 3px 6px;
   border-radius: 6px;
   margin-right: 5px;
-  width: 15px;
+  width: 25px;
 }
 
-#content .cards .card .img .save .whiteSave {
+#yourContent .content .yourCard .img .save .whiteSave {
   display: none;
 }
 
-#content .cards .card .img .save .eye {
+#yourContent .content .yourCard .img .save .eye {
   background-color: white;
   padding: 7px 5px;
   border-radius: 5px;
-  width: 15px;
+  width: 25px;
   cursor: pointer;
 }
 
-#content .cards .card .img .save.active .blackSave {
+#yourContent .content .yourCard .img .save.active .blackSave {
   display: none;
 }
 
-#content .cards .card .img .save.active .whiteSave {
+#yourContent .content .yourCard .img .save.active .whiteSave {
   display: block;
   background-color: #1F00FF;
   padding: 3px 6px;
   border-radius: 6px;
   margin-right: 5px;
-  width: 15px;
+  width: 25px;
 }
 
-#content .cards .card h3 {
+#yourContent .content .yourCard h3 {
   padding-left: 5px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.5px;
+  font-weight: 600;
 }
 
-#content .cards .card p {
-  font-size: 14px;
+#yourContent .content .yourCard p {
+  font-size: 13px;
   padding-left: 5px;
   letter-spacing: 0.25px;
-  line-height: 20px;
-  padding-bottom: 15px;
+  line-height: 18px;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
