@@ -21,7 +21,7 @@ body {
     margin: 0;
 }
 
-section {
+.section {
     padding-left: 210px;
     padding-right: 30px;
 }
@@ -39,7 +39,7 @@ li {
 
 /* TDB - GRAPHISTE */
 
-header {
+.headerGraphiste {
     background-color: $blue;
     position: fixed;
     height: 100%;
@@ -167,6 +167,7 @@ header {
             align-items: center;
             justify-content: space-between;
             border-right: 1px solid $greyLight;
+            position: relative;
             .text, img {
                 margin-right: 20px;
                 text-align: right;
@@ -177,6 +178,50 @@ header {
                 .job {
                     color: $grey;
                     font-size: 12px;
+                }
+                
+            }
+            .openArrow {
+                cursor: pointer;
+
+            }
+            .myAccount {
+                position: absolute;
+                top: 53px;
+                left: 0;
+                right: 0;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 3px 3px 1px rgba(31, 0, 255, 0.11);
+                border-radius: 10px;
+                opacity: 0;
+                transition: 0.3s ease;
+                pointer-events: none;
+                &.active {
+                    opacity: 1;
+                    transition: 0.3s ease;
+                    pointer-events: inherit;
+                }
+                a {
+                    text-transform: uppercase;
+                    color: #000;
+                    font-size: 14px;
+                    line-height: 16px;
+                    letter-spacing: 2px;
+                    padding: 15px 20px;
+                    &:hover {
+                        background-color: $blue;
+                        color: #fff;
+                        &:first-child {
+                            border-top-right-radius: 10px;
+                            border-top-left-radius: 10px;
+                        }
+                        &:last-child {
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                        }
+                    }
                 }
             }
         }
@@ -1094,4 +1139,270 @@ header {
             }
         }
     }
+}
+
+/* ONEPAGE */
+
+.sectionGraphiste {
+    padding: 0 30px;
+    h1 {
+        color: #fff;
+    }
+    h2 {
+        color: #000;
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+
+    p {
+        color: #000;
+        font-weight: 200;
+        font-size: 15px;
+        letter-spacing: 0.75px;
+    }
+}
+
+#home {
+    background-color: $blue;
+    padding-bottom: 50px;
+    position: relative;
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+        margin-bottom: 70px;
+        .connexion {
+            
+            .signIn {
+                background-color: #000;
+                padding: 15px 20px;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 13px;
+                letter-spacing: 1px;    
+                margin-right: 10px;
+                &:hover {
+                    background-color: #fff;
+                    color: $blue;
+                    border: 1px solid #fff;
+                    transition: 0.3s ease;
+                }
+            }
+            
+            .signUp {
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 600;
+                color: #fff;
+                letter-spacing: 1px;
+                transition: 0.3s ease;
+                padding: 15px 20px;
+                border: 1px solid transparent;
+                &:hover {
+                    border: 1px solid #fff;
+                    transition: 0.3s ease;
+                }
+                
+            }
+        }
+    }
+    .content {
+        padding-left: 100px;
+        margin-bottom: 100px;
+        .text {
+            max-width: 33%;
+            p {
+                font-style: italic;
+                font-weight: 200;
+                max-width: 75%;
+                color: #fff;
+            }
+            h1 {
+                font-weight: 600;
+                font-size: 90px;
+                letter-spacing: 1px;
+                margin-top: 0;
+                //font-family: $fontTitle;
+            }
+            .cta {
+                .signIn {
+                    background-color: #000;
+                    padding: 15px 20px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 13px;
+                    letter-spacing: 1px;    
+                    margin-right: 20px;
+                    border: 1px solid #000;
+                    transition: 0.3s ease;
+                    &:hover {
+                        background-color: #fff;
+                        color: $blue;
+                        border: 1px solid #fff;
+                        transition: 0.3s ease;
+                    }
+                }
+                .knowMore {
+                    border: 1px solid #fff;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                    padding: 15px 20px;
+                    color: #fff;
+                    transition: 0.3s ease;
+                    &:hover {
+                        background-color: #fff;
+                        color: $blue;
+                        transition: 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+    .img {
+        position: absolute;
+        top: calc(50% - 300px);
+        right: 15px;
+        width: 55%;
+    }
+    .arrow {
+        text-align: center;
+        img {
+            width: 35px;
+        }
+    }
+}
+
+#about {
+    text-align: center;
+    padding-top: 130px;
+    margin-bottom: 150px;
+    position: relative;
+    .leftImg {
+        position: absolute;
+        top: -110px;
+        left: -100px;
+        width: 40%;
+        z-index: -1;
+    }
+    h2 {
+        max-width: 520px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+    p {
+        line-height: 30px;
+        max-width: 520px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .cta {
+        background-color: $blue;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 1px; 
+        padding: 15px 20px;
+        max-width: 520px;
+        margin: 0 auto;
+        transition: 0.3s ease;
+
+        &:hover {
+            background-color: #fff;
+            border: 1px solid $blue;
+            color: $blue;
+            transition: 0.3s ease;
+        }
+    }
+    .rightImg {
+        position: absolute;
+        top: -110px;
+        right: 0;
+        width: 40%;
+        z-index: -1;
+    }
+    
+}
+
+#portail {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: flex-start;
+    padding-top: 50px;
+    .firstColumn, .secondColumn, .thirdColumn {
+        width: 33%;
+        padding: 0 15px;
+        .element {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 50px;
+            .text {
+                margin-left: 15px;
+                h3 {
+                    color: #000;
+                    font-size: 17px;
+                    letter-spacing: 0.5px;
+                }
+                p {
+                    line-height: 22px;
+                }
+            }
+            
+        }
+        
+
+    }
+}
+
+footer {
+    position: relative;
+    .img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        z-index: -1;
+    }
+    .text {
+        text-align: center;
+        padding-top: 50px;
+        img {
+            margin-bottom: 50px;
+        }
+        .footerMenu {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p, a {
+                color: #fff;
+                font-weight: 600;
+                letter-spacing: 0.25px;
+                font-size: 15px;
+            }
+            a {
+                transition: 0.3s ease;
+                &:hover {
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        border-bottom: 2px solid #fff;
+                        padding-top: 5px;
+                        transition: 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+    
 }
