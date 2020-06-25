@@ -304,7 +304,7 @@ li {
 #yourContent .bgImg {
   position: absolute;
   bottom: 0;
-  right: -100px;
+  right: 0;
   opacity: 0.2;
 }
 
@@ -417,7 +417,7 @@ li {
 #yourHome .bgImg {
   position: absolute;
   bottom: 0;
-  right: -100px;
+  right: 0;
   opacity: 0.2;
 }
 
@@ -923,7 +923,7 @@ li {
 #yourProjects .bgImg {
   position: absolute;
   bottom: 0;
-  right: -100px;
+  right: 0;
   opacity: 0.2;
 }
 
